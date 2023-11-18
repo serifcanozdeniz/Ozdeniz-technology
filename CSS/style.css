@@ -298,7 +298,7 @@ footer{
     gap: 20px;
 }
 
-.footer-links h2{
+.footer-links-title{
     color: var(--green);
 }
 
