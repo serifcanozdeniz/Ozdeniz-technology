@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* değişkenler */
+
+:root{
+    --white:#f5f5f5;
+    --black:#121212;
+    --green:#16ff00;
+    --gray:#cdcccc;
+    --gren2:#15ff0047;
+}
+
+/* genel etiket stillendirme */
+
+a{
+    color: var(--white);
+}
+
+h1,h2,h3,h4{
+    color: var(--white);
+}
+p{
+    color: var(--gray);
+}
+
+body{
+    font-family: 'Electrolize', sans-serif;
+    background-color: var(--black);
+}
+
+section{
+    padding: 30px;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+
+.welcome{
+    padding: 100px;
+    font-size: 55px;
+    text-align: center;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#what-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.what-info{
+    max-width: 400px;
+    text-align: center;
+}
+
+.what-info h1{
+    margin-bottom: 50px;
+    color: var(--green);
+
+}
+
+
+.what-cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.what-card{
+    background-color: #323443;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.what-card h3{
+    color: var(--green);
+}
+
+.what-card img{
+    position: absolute;
+    top: -50px;
+    width: 50px;
+
+}
+
+/* projeler başlangıç */
+
+#projects-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#projects-sec h1{
+    color: var(--green);
+}
+
+.project-info h1{
+    color: var(--green);
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+}
+
+.project-image{
+    background-color: #323443;
+    display: flex;
+    padding: 40px 50px 0;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-image:hover{
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+
+.project-image .icon{
+    background-color: var(--black);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+/* projeler bitiş */
+
+
+
+
+
+@media (max-width:768px) {
+    #what-sec{
+        align-items: center;
+        text-align: center;
+    }
+    .what-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

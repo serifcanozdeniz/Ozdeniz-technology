@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* değişkenler */
+
+:root{
+    --white:#f5f5f5;
+    --black:#121212;
+    --green:#16ff00;
+    --gray:#cdcccc;
+    --gren2:#15ff0047;
+}
+
+/* genel etiket stillendirme */
+
+a{
+    color: var(--white);
+}
+
+h1,h2,h3,h4{
+    color: var(--white);
+}
+p{
+    color: var(--gray);
+}
+
+body{
+    font-family: 'Electrolize', sans-serif;
+    background-color: var(--black);
+}
+
+section{
+    padding: 30px;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#top-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.counter-body{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--green);
+    box-shadow: 0px 0px 19px 5px rgba(22, 255, 0, 0.39);
+}
+
+.top-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.top-section-left h1{
+    color: var(--green);
+}
+
+.counter{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.count{
+    background-color: #000015;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.count p{
+    color: var(--green);
+    font-size: 15px;
+}
+
+
+.top-section-left .buttons{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.top-section-left .buttons button{
+    background-color: #000015;
+    color: var(--green);
+    border: 1px solid var(--green);
+    transition: all .5s ease;
+}
+
+.top-section-left .buttons button:hover{
+    box-shadow: 0px 0px 19px 5px rgba(22, 255, 0, 0.39);
+    transform: scale(0.9);
+    background-color: var(--green);
+    color: #000015;
+    
+}
+
+.top-section-right img{
+    border-radius: 10px;
+}
+
+#team-images{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-wrapper img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.img-wrapper{
+    position: relative;
+}
+
+.img-wrapper h1{
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#donate-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 70px 80px;
+}
+
+.donate-sec-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donate-sec-info h1{
+    color: var(--green);
+}
+
+.donate-sec-info button{
+    background-color: #000015;
+    color: var(--green);
+    border: 1px solid var(--green);
+    transition: all .5s ease;
+}
+
+.donate-sec-info button:hover{
+    box-shadow: 0px 0px 19px 5px rgba(22, 255, 0, 0.39);
+    transform: scale(0.9);
+    background-color: var(--green);
+    color: #000015;
+}
+
+.donate-sec-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    
+}
+
+.donate-sec-people{
+    background-color: #000015;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    text-wrap: nowrap;
+    min-width: 300px;
+}
+
+.donate-sec-people img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width:1280px) {
+    #team-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-wrapper img{
+        width: 300px;
+    }
+}
+
+@media (max-width:1000px) {
+    #top-section{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:1370px) {
+    .donate-sec-content{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:768px) {
+    .donate-sec-content{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
